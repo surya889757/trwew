@@ -1,3 +1,15 @@
-https://app.sketchup.com/app?hl=en
-https://3dwarehouse.sketchup.com/
-UuFHDmHP1RyyeXEIv_UtRPrLrB-GyraF
+1.      Self-Driving Autonomous Car using Open-CV and Python
+
+Self-Driving Car which can avoid obstacles, respond to traffic light, stop sign, pedestrian detection and overtaking other vehicles on the track. It uses Supervised Machine Learning that is the car is trained on a track and generate a model based on the training data.
+
+2.      Traffic Management for Emergency Vehicle
+
+The main goal of this system is to reduce the travel time of an ambulance to the hospital by automatically clearing the lane, before the ambulance reaches the intersection.
+
+3.      Monitoring the on-farm welfare of sheep and goats
+
+In this project we are monitoring the sheep and goats health’s and growth conditions. In the form we plug RF tags for every sheep we can monitor the growth factors like weight of the sheep this will monitor by using weight sensor and alerts for medical checkups of particular sheep’s. we can send all this data to server .By using ML concepts we can forecast the mature sheep’s and health conditions of goats based on their growth factor
+
+4.      Disinfecting Robot with Ultraviolet Lights
+
+The robot can disinfect and kill diseases, viruses, bacteria, and other types of harmful organic microorganisms in the environment, with ultraviolet light, by breaking down their DNA-structure. Currently, several countries have tested these robots successfully to disinfect their hospitals, public transports, office spaces, and other public places. We have implemented this UV robot in a cost-effective way to expand the disinfection process to public places.
