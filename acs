@@ -4,8 +4,9 @@ import time
 import RPi.GPIO as GPIO
 import Adafruit_DHT
 import time
-#import sys
+import sys
 #import numpy as np 
+
 import cv2 
 import smtplib
 import os.path
@@ -21,22 +22,32 @@ from Adafruit_IO import Client, Feed, RequestError
 ##fourcc = cv2.VideoWriter_fourcc(*'XVID') 
 ##out = cv2.VideoWriter('output.avi', fourcc, 20.0, (640, 480)) 
 from mcp3208 import MCP3208
+
 adc = MCP3208()
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM) 
 DHT_PIN = 26
 Motor1A = 21
 Motor1B = 20
+Motor1C = 20
+Motor1D = 20
 #irsensor=5
 servo_pin=6
 moisture = 16
+TRIG=7
+ECHO=8
+
 temp_flag=0
 DHT_SENSOR = Adafruit_DHT.DHT11
 #GPIO.setup(irsensor,GPIO.IN)
 GPIO.setup(servo_pin, GPIO.OUT)
 GPIO.setup(Motor1A,GPIO.OUT)  # All pins as Outputs
 GPIO.setup(Motor1B,GPIO.OUT)
+GPIO.setup(Motor1C,GPIO.OUT)
+GPIO.setup(Motor1D,GPIO.OUT)
 GPIO.setup(moisture, GPIO.IN)
+GPIO.setup(TRIG, GPIO.OUT)
+GPIO.setup(ECHO, GPIO.IN)
 p = GPIO.PWM(servo_pin, 50)
 i=0
 
@@ -49,9 +60,9 @@ size = (frame_width, frame_height)
 result = cv2.VideoWriter('filename.avi',  
                          cv2.VideoWriter_fourcc(*'MJPG'), 
                          10, size) 
-email = 'gmahi7013@gmail.com'
-password = '7013521093'
-send_to_email = 'gorantlagarimaheswari7013@gmail.com'
+email = 's8897576332@gmail.com'
+password = 'surya8897'
+send_to_email = 's8897576332@gmail.com'
 subject = 'This is the subject'
 message = 'This is my message from home'
 file_location = '///home/pi/Desktop/LED_BLINK_ADAFRUIT//filename.avi'
